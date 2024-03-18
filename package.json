@@ -1,0 +1,20 @@
+{
+  "name": "star-wars-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./src/style/main.scss:./src/main.css"
+  },
+  "keywords": [],
+  "author": "albertleipzig <albertclemvill@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "sass": "^1.72.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
