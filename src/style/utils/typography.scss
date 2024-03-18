@@ -1,0 +1,56 @@
+@use './colors.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+$fontFace: 'Major Mono Display', monospace;
+
+@mixin title {
+  font-family: $fontFace;
+  font-size: 4.5rem;
+  color: $black;
+  text-align: center;
+  line-height: 1.2em;
+  margin-bottom: 1ch;
+}
+
+@mixin subTitle {
+  font-family: $fontFace;
+  font-size: 3.3rem;
+  color: $black;
+  line-height: 1.4em;
+}
+
+@mixin baseFont {
+  font-family: $fontFace;
+  font-size: 2.1rem;
+  color: $black;
+  line-height: 1.6em;
+  max-width: 75ch;
+}
+
+h1 {
+  @include title;
+}
+
+h2 {
+  @include subTitle;
+}
+
+p {
+  @include baseFont;
+}
+
+a {
+  @include baseFont;
+}
+
+li {
+  @include baseFont;
+}
+
+label {
+  @include baseFont;
+}
+
+button {
+  @include baseFont;
+}

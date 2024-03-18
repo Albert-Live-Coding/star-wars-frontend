@@ -12,13 +12,15 @@ export const allFilmsPage = () => {
   title.innerText = 'All Films Page';
   page.appendChild(title);
 
+  const list = document.createElement('ul');
   handleLoadingData().then((items) =>
     items.results.forEach((item) => {
-      const element = document.createElement('p');
+      const element = document.createElement('li');
       element.innerText = item.title;
-      page.appendChild(element);
+      list.appendChild(element);
     })
   );
+  page.appendChild(list);
 
   return page;
 };
