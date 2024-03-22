@@ -1,0 +1,3 @@
+- fetchData function einrichten     Baris
+- films darstellen (filmsPage)      Nadja
+- people darstellen (peoplePage)    Hannah
